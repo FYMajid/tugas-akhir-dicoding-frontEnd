@@ -97,11 +97,40 @@ aside ul li a {
 
 aside ul li a:hover {
   color: purple;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  cursor: pointer;
 }
 
 aside ul li span {
   color: grey;
+}
+.news-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.news-item .news-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item .news-item-content span {
+  margin-top: 5px;
+}
+
+.news-item img {
+  width: 80px; /* Sesuaikan ukuran gambar berita sesuai kebutuhan */
+  height: auto;
+  margin-right: 10px;
+}
+
+.news-item h4 {
+  margin: 0;
 }
 
 aside .btn {
